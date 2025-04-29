@@ -1,38 +1,3 @@
-## Структура
-
-```text
-├── api/
-│   ├── __init__.py
-│   ├── clash.py
-│   └── sheets.py
-│
-├── config/
-│   ├── __init__.py
-│   ├── bot.py
-│   ├── logger.py
-│   ├── sheets.json  # YOUR CREDENTIALS
-│   └── sheets.py
-│
-├── handlers/
-│   ├── __init__.py
-│   ├── account.py
-│   ├── poll.py
-│   └── core/
-│       ├── __init__.py
-│       ├── account_processor.py
-│       ├── base.py
-│       ├── message_processor.py
-│       ├── poll_processor.py
-│       └── users.py
-│
-├── .env
-├── .gitignore
-├── commands.py
-├── main.py
-├── readme.md
-└── requirements.txt
-```
-
 ## Встановлення
 
 В проєкті застосовуються наступні інтеграції: Telegram, Google Cloud, Google Sheets, Clash of Clans API. Тому потрібно попередньо налаштувати усі сервіси.
