@@ -13,12 +13,14 @@ base_commands = [
 """
 
 privilege_commands = [
-    BotCommand(command='create_poll', description='Створити опитування')
+    BotCommand(command='create_poll', description='Створити опитування'),
+    BotCommand(command='answers', description='Відобразити відповіді із Google Sheets'),
 ]
 """
 Додаткові команди для привілейованих користувачів (адміністраторів).
 
 - /create_poll: Створити нове опитування у чаті.
+- /answers: Відобразити відповіді із Google Sheets
 """
 
 

@@ -6,6 +6,7 @@ from config.bot import dp
 
 from handlers.account import add_account, remove_account
 from handlers.poll import create_poll
+from handlers.views import table_view_command
 
 """
 При додаванні нового хендлера (handlers), робити його імпорт тут!
