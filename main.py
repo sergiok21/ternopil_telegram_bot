@@ -1,4 +1,5 @@
 import asyncio
+import logging
 
 from commands import set_user_commands, set_admin_commands
 from config.bot import bot, router
@@ -6,11 +7,13 @@ from config.bot import dp
 
 from handlers.account import add_account, remove_account
 from handlers.poll import create_poll
-from handlers.views import table_view_command
+from handlers.views import table_empty_answers_command
 
 """
 При додаванні нового хендлера (handlers), робити його імпорт тут!
 """
+
+logger = logging.getLogger(__name__)
 
 
 async def main() -> None:
@@ -33,4 +36,7 @@ async def main() -> None:
 
 
 if __name__ == '__main__':
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        logger.info('Exiting...')

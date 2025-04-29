@@ -14,7 +14,7 @@ base_commands = [
 
 privilege_commands = [
     BotCommand(command='create_poll', description='Створити опитування'),
-    BotCommand(command='answers', description='Відобразити відповіді із Google Sheets'),
+    BotCommand(command='empty_answers', description='Відобразити порожні відповіді із Google Sheets'),
 ]
 """
 Додаткові команди для привілейованих користувачів (адміністраторів).
